@@ -400,5 +400,5 @@ while True:
     sleep (120)
     radio.config(group=99)
     radio.send('NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED')
-    print ('Reached group 99 ! restarting back to zero in 4 seconds !')
+    print ('Reached group 99 going back to group zero in 4 seconds !')
     sleep (4000)
