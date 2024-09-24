@@ -8,7 +8,7 @@ nuke=('group nuked !')
 radio.on()
 while True:
     print ('preparing...')
-    sleep(1300)
+    sleep(3300)
     print ('launching nuke...')
     sleep(1200)
     print('3')
