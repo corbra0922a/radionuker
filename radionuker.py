@@ -7,8 +7,10 @@ import random
 nuke=('group nuked !')
 radio.on()
 while True:
-    print ('launching nuke')
-    sleep(1000)
+    print ('preparing...')
+    sleep(1300)
+    print ('launching nuke !')
+    sleep(1200)
     print('3')
     sleep(1000)
     print('2')
