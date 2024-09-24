@@ -2,7 +2,8 @@ from microbit import *
 import radio
 import microbit
 import random
-
+#even tho ethan told me no im still gonna make this
+#lots of copy and pasting and counting lol
 nuke=('group nuked !')
 radio.on()
 while True:
