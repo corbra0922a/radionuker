@@ -9,7 +9,7 @@ radio.on()
 while True:
     print ('preparing...')
     sleep(1300)
-    print ('launching nuke !')
+    print ('launching nuke...')
     sleep(1200)
     print('3')
     sleep(1000)
