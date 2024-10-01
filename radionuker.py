@@ -11,7 +11,7 @@ message='NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED'
 while True:
     #1 through 84
     for i in range (1,84):
-        #sets the radio config to the value of i
+        #sets the radio channel to the value of i
         radio.config(channel=i)
         #sends the variable 'message'
         radio.send(message)
