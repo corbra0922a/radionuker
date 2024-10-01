@@ -1,15 +1,13 @@
 from microbit import *
 import radio
 import microbit
-# Initialize the radio
-radio.on()
 
-# Message to send
-message = 'NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED'
+message='NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED'
 
 while True:
-    for group in range(1, 256):  # Groups from 1 to 256
-        radio.config(group=group)
+    for i in range (1,99):
+        radio.config(channel=i)
         radio.send(message)
-        print(str(group))
-        sleep(1)
+        print('group',(i),('nuked'))
+        sleep(10)
+        
