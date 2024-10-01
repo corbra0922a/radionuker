@@ -2,12 +2,21 @@ from microbit import *
 import radio
 import microbit
 
+    #I can't go to channel 99 the most I can do is 84 if I go over 84 I get this error:
+    #ValueError: value out of range for argument 'channel'
+    #I think it's because the microbit only has 84 channels
+
 message='NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED'
 
 while True:
-    for i in range (1,99):
+    #1 through 84
+    for i in range (1,84):
+        #sets the radio config to the value of i
         radio.config(channel=i)
+        #sends the variable 'message'
         radio.send(message)
+        #print 'group' and 'i' and also adds the word 'nuked' at the end
         print('group',(i),('nuked'))
+        #sleep 10ms
         sleep(10)
         
