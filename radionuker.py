@@ -17,6 +17,5 @@ while True:
         radio.send(message)
         #print 'group' and 'i' and also adds the word 'nuked' at the end
         print('channel',(i),('nuked'),('with message'),(message))
-        #sleep 10ms
-        sleep(10)
+        
         
