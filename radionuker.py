@@ -6,7 +6,7 @@ import microbit
     #ValueError: value out of range for argument 'channel'
     #I think it's because the microbit only has 84 channels
 
-message='NUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKEDNUKED'
+message='HI'
 
 while True:
     #1 through 84
@@ -16,7 +16,7 @@ while True:
         #sends the variable 'message'
         radio.send(message)
         #print 'group' and 'i' and also adds the word 'nuked' at the end
-        print('group',(i),('nuked'))
+        print('channel',(i),('nuked'),('with message'),(message))
         #sleep 10ms
         sleep(10)
         
