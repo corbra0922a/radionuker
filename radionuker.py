@@ -18,13 +18,7 @@ sleep(1000)
 print('1')
 sleep(1000)
 message='HI'
-radio_message=radio.receive()
 while True:
-    if radio_message is not None:
-        print('recived message!')
-        sleep(3000)
-        print(radio_message)
-        sleep(2000)
     #1 through 84
     for i in range (1,84):
         #sets the radio channel to the value of i
