@@ -6,8 +6,7 @@ import microbit
     #ValueError: value out of range for argument 'channel'
     #I think it's because the microbit only has 84 channels
 
-
-message='HI'
+message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
 while True:
     #1 through 84
     for i in range (1,84):
