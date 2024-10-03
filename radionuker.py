@@ -31,8 +31,8 @@ while True:
         sleep(1000)
         print('NUKE MODE ACTIVE')
         sleep(500)
-    if microbit.button_a.was_pressed():
-        start=-1
-        sleep(1000)
-        print('nuke offline :(')
+        if microbit.button_a.was_pressed():
+            start=-1
+            sleep(1000)
+            print('nuke offline :(')
         
