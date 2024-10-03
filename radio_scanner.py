@@ -6,7 +6,7 @@ import urandom
 
 scan_progress=print('scan in progress...')
 message=radio.receive()
-radio_message=('.,-')
+radio_message=('HELLO')
 while True:
      for scanner in range(1,84):
          radio.config(channel=scanner)
