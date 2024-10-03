@@ -4,14 +4,13 @@ import radio
 import math
 import urandom
 
-scan_progress=print('scan in progress...')
 message=radio.receive()
-radio_message=('HELLO')
+radio_message=('.,-')
 while True:
-     for scanner in range(1,84):
+     for scanner in range(0,84):
          radio.config(channel=scanner)
          print('nothing',('found'),('in group'),(scanner))
-         sleep(5)
+         sleep(1)
          if message is not None:
              sleep(2000)
              print('recived message!')
