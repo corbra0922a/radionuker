@@ -6,6 +6,7 @@ import urandom
 
 scan_progress=print('scan in progress...')
 message=radio.receive()
+radio_message=('.,-')
 while True:
      for scanner in range(1,84):
          radio.config(channel=scanner)
@@ -16,5 +17,8 @@ while True:
              print('recived message!')
              sleep(1000)
              print(message,('sent from channel',(scanner),))
-             sleep(2000)
+             sleep(2200)
+             radio.send(radio_message)
+             print('sent message to channel',(scanner))
+             sleep(1000)
              
