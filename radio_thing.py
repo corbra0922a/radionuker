@@ -11,17 +11,17 @@ print('Button A=start nuker')
 sleep(200)
 print('Button B=stop nuker')
         
-message='Hello :)'
+message='GET SPAMMED BY BRAY LOLLOLLOLLOL'
 start=0
 while True:
     if start==1:
         #1 through 84
-        for i in range (1,84):
+        for channel_scan in range (1,84):
             #sets the radio channel to the value of i
-            radio.config(channel=i)
+            radio.config(channel=channel_scan)
             #sends the variable 'message'
             radio.send(message)
-            print('nuked channel',(i))
+            print('nuked channel',(channel_scan))
             sleep(5)
     if microbit.button_a.was_pressed():
         start=+1
@@ -65,6 +65,7 @@ while True:
                      sleep(200)
     if button_a.is_pressed() and button_b.is_pressed():
         start=+4
+        sleep(200)
         
     if start==4:
         print('pinlogo=scanner mode')
