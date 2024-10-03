@@ -11,7 +11,7 @@ print('Button A=start nuker')
 sleep(200)
 print('Button B=stop nuker')
         
-message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
+message='Hello :)'
 start=0
 while True:
     if start==1:
@@ -58,14 +58,11 @@ while True:
                 print('nothing',('found'),('in group'),(scanner))
                 sleep(1)
                 if message is not None:
-                     sleep(2000)
-                     print('recived message!')
-                     sleep(1000)
                      print(message,('sent from channel',(scanner),))
-                     sleep(2200)
+                     sleep(1000)
                      radio.send(radio_message)
                      print('sent message to channel',(scanner))
-                     sleep(1000)
+                     sleep(200)
     if button_a.is_pressed() and button_b.is_pressed():
         start=+4
         
@@ -75,6 +72,6 @@ while True:
         print('Button A=start nuker')
         sleep(200)
         print('Button B=stop nuker')
-        start==0
+        start=+0
         
     
