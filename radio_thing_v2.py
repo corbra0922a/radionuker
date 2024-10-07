@@ -19,6 +19,7 @@ radio.on()
 print('button A=nuke')
 print('button B=stop everything')
 print('pin_logo=nuke channel and group')
+print('press button A and B (same time) starts the channel scanner')
 mode=0
 message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
 radio_message='HI'
@@ -67,6 +68,8 @@ while True:
         print('button A=nuke')
         print('button B=stop everything')
         print('pin_logo=nuke channel and group')
+        print('press button A and B (same time) starts the channel scanner')
+        sleep(1000)
         mode=0
     if mode==4:
         print('channel nuke')
