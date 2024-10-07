@@ -10,7 +10,7 @@ import microbit
 #If mode=6 it starts scanner
 #If mode=7 controls
 
-#I just relized I could have just had multiple varibles and have 1=on and 2=off 
+#I just relized I could have just had multiple varibles and have 1=on and 2=off instead of controlling one variable
 #Im dumb
 
 
@@ -19,7 +19,7 @@ radio.on()
 print('button A=nuke')
 print('button B=stop everything')
 print('pin_logo=nuke channel and group')
-print('press button A and B (same time) starts the channel scanner')
+print('microbit_shake=channel scanner')
 mode=0
 message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
 radio_message='HI'
@@ -41,7 +41,8 @@ while True:
         mode=3
     if pin_logo.is_touched():
         mode=2
-    if button_a.was_pressed() and button_b.was_pressed():
+  
+    if accelerometer.was_gesture('shake'):
         mode=7
         break
         
