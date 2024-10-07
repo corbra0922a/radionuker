@@ -35,16 +35,16 @@ while True:
             radio.send(message)
             #print 'group' and 'i' and also adds the word 'nuked' at the end
             sleep(1)
+   
+    if button_a.was_pressed() and button_b.was_pressed():
+        mode=7 
     if microbit.button_a.was_pressed():
         mode=1
     if microbit.button_b.was_pressed():
         mode=3
     if pin_logo.is_touched():
         mode=2
-  
-    if button_a.was_pressed() and button_b.was_pressed():
-        mode=7
-        break
+
         
     if mode==2:
             #declares a variable named 'radio_group' then it will count in a range of 0 to 99 then it restarts
@@ -97,4 +97,3 @@ while True:
             print('press button B to stop')
             sleep(1000)
             mode=6
-
