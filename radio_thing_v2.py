@@ -70,7 +70,7 @@ while True:
         print('button B=stop everything')
         print('pin_logo=nuke channel and group')
         print('press button A and B (same time) starts the channel scanner')
-        print('microbit_shake=channel scanner')
+        print('button A and button B (same time)=channel scan')
         sleep(1000)
         mode=0
     if mode==4:
