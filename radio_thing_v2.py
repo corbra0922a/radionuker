@@ -19,7 +19,7 @@ radio.on()
 print('button A=nuke')
 print('button B=stop everything')
 print('pin_logo=nuke channel and group')
-print('microbit_shake=channel scanner')
+print('button A and button B (same time)=channel scan')
 mode=0
 message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
 radio_message='HI'
@@ -42,7 +42,7 @@ while True:
     if pin_logo.is_touched():
         mode=2
   
-    if accelerometer.was_gesture('shake'):
+    if button_a.was_pressed() and button_b.was_pressed():
         mode=7
         break
         
@@ -70,6 +70,7 @@ while True:
         print('button B=stop everything')
         print('pin_logo=nuke channel and group')
         print('press button A and B (same time) starts the channel scanner')
+        print('microbit_shake=channel scanner')
         sleep(1000)
         mode=0
     if mode==4:
