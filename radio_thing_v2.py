@@ -1,11 +1,18 @@
 from microbit import *
 import radio
 import microbit
+#if mode=0 it does nothing
+#if mode=1 it starts the nuke
+#if mode=2 it does radio channel and group nuke
+#if mode=3 it stops everything and prints the controls
+
+
 mode=0
 message='0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶0̶'
 print('button A=nuke')
-print('button B=stop')
-print('pin_logo=nuke with channel')
+print('button B=stop everything')
+print('pin_logo=nuke channel and group')
+
 radio_message='HI'
 
 while True:
@@ -25,9 +32,10 @@ while True:
     if microbit.button_a.was_pressed():
         mode=1
     if microbit.button_b.was_pressed():
-        mode=0
+        mode=3
     if pin_logo.is_touched():
         mode=2
+        
     if mode==2:
             #declares a variable named 'radio_group' then it will count in a range of 0 to 99 then it restarts
             for radio_group in range(0,99):
@@ -46,4 +54,9 @@ while True:
                     #prints the radio group you nuked then the channel you nuked (example below this comment)
                     #group [group number] nuked channel [channel number] nuked
                     print('group',radio_group,('nuked'),('channel'),(radio_channel),('nuked'))
+    if mode==3:
+        print('button A=nuke')
+        print('button B=stop everything')
+        print('pin_logo=nuke channel and group')
+        mode=0
         
